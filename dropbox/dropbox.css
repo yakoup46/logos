@@ -1,0 +1,33 @@
+.box {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  top: 150px;
+  left: 150px;
+  transform: scaleY(0.75) rotate(-45deg);
+  background: #FFF;
+  box-shadow: -13px 13px 0 0 #3277e3, -67px 67px 0 0 #3277e3; }
+
+.box:before {
+  content: '';
+  width: 75px;
+  height: 55px;
+  background: #3277e3;
+  position: absolute;
+  top: -55px;
+  left: 4px;
+  transform: skewX(-8deg);
+  box-shadow: 11px 130px 0 0 #3277e3, 10px 130px 0 4px #FFF, -42px 142px 0 0 #3277e3; }
+
+.box:after {
+  content: '';
+  width: 75px;
+  height: 55px;
+  background: #3277e3;
+  position: absolute;
+  top: 6px;
+  left: 65px;
+  transform: rotate(90deg) skewX(8deg);
+  box-shadow: -11px 130px 0 0 #3277e3, -6px 134px 0 0 #FFF, 42px 142px 0 0 #3277e3; }
+
+/*# sourceMappingURL=dropbox.css.map */
