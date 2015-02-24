@@ -1,0 +1,31 @@
+$colors: #F1511B, #80CC28, #00ADEF, #FBBC09;
+
+figure.microsoft {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+
+    >div {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                background-color: nth($colors, $i);
+                @if $i < 3 {
+                    top: 0px;
+                } @else {
+                    bottom: 0px;
+                }
+
+                @if $i % 2 == 0 {
+                    right: 0px;
+                } @else {
+                    left: 0px;
+                }
+            }
+        }
+    }
+}

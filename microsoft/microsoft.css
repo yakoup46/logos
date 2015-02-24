@@ -1,0 +1,25 @@
+figure.microsoft {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto; }
+  figure.microsoft > div {
+    width: 190px;
+    height: 190px;
+    position: absolute; }
+    figure.microsoft > div:nth-child(1) {
+      background-color: #F1511B;
+      top: 0px;
+      left: 0px; }
+    figure.microsoft > div:nth-child(2) {
+      background-color: #80CC28;
+      top: 0px;
+      right: 0px; }
+    figure.microsoft > div:nth-child(3) {
+      background-color: #00ADEF;
+      bottom: 0px;
+      left: 0px; }
+    figure.microsoft > div:nth-child(4) {
+      background-color: #FBBC09;
+      bottom: 0px;
+      right: 0px; }
