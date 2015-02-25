@@ -1,0 +1,128 @@
+.html5 {
+  border-top: 300px solid #E44D26;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 200px;
+  position: relative; }
+  .html5:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 25px solid #E44D26;
+    position: absolute;
+    bottom: -25px;
+    left: 0; }
+  .html5:before {
+    content: '';
+    border-top: 265px solid #F16529;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    width: 84px;
+    position: absolute;
+    top: -282px;
+    left: 100px; }
+  .html5 .part1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #F16529;
+    border-right: 84px solid transparent;
+    z-index: 10;
+    left: 100px;
+    top: -17px; }
+  .html5 .fivetop {
+    position: absolute;
+    border-top: 36px solid #FFF;
+    border-left: 0px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: 93px;
+    z-index: 10;
+    top: -254px;
+    right: 10px; }
+    .html5 .fivetop:after {
+      content: '';
+      position: absolute;
+      top: -36px;
+      right: 87px;
+      transform: scaleX(-1);
+      filter: FlipH;
+      border-top: 36px solid #EBEBEB;
+      border-left: 0px solid transparent;
+      border-right: 3px solid transparent;
+      height: 0;
+      width: 89px; }
+    .html5 .fivetop:before {
+      position: absolute;
+      content: '';
+      background: #EBEBEB;
+      width: 36px;
+      height: 74px;
+      left: -80px;
+      transform: skewX(5deg); }
+  .html5 .fivemid {
+    position: absolute;
+    border-top: 36px solid #FFF;
+    border-left: 0px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: 83px;
+    z-index: 10;
+    top: -180px;
+    right: 20px; }
+    .html5 .fivemid:after {
+      content: '';
+      position: absolute;
+      top: -36px;
+      right: 77px;
+      transform: scaleX(-1);
+      filter: FlipH;
+      border-top: 36px solid #EBEBEB;
+      border-left: 0px solid transparent;
+      border-right: 3px solid transparent;
+      height: 0;
+      width: 79px; }
+    .html5 .fivemid:before {
+      position: absolute;
+      content: '';
+      background: #FFF;
+      width: 36px;
+      height: 60px;
+      left: 44px;
+      transform: skewX(-5deg); }
+  .html5 .fivebot {
+    position: absolute;
+    bottom: 50px; }
+    .html5 .fivebot:before {
+      width: 74px;
+      height: 0;
+      position: absolute;
+      content: '';
+      bottom: 1px;
+      border-top: 36px solid #EBEBEB;
+      border-left: 3px solid transparent;
+      border-right: 0px solid transparent;
+      left: 24px;
+      transform: skewX(10deg) rotate(10deg); }
+    .html5 .fivebot:after {
+      width: 68px;
+      height: 0;
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      border-top: 36px solid #fff;
+      border-left: 0px solid transparent;
+      border-right: 3px solid transparent;
+      left: 101px;
+      transform: skewX(-10deg) rotate(-10deg); }
+  .html5 .fivetail {
+    position: relative;
+    left: 22px;
+    bottom: 129px;
+    width: 36px;
+    height: 50px;
+    background: #EBEBEB;
+    transform: skewY(5deg) rotate(-5deg); }
