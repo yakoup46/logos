@@ -1,0 +1,146 @@
+$red: #E44D26;
+$orange: #F16529;
+$grey: #EBEBEB;
+
+@mixin section($top: -254px, $width: 93px, $skew: 0deg){
+    position: absolute;
+    border-top: 36px solid #FFF;
+    border-left: 0px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: #{$width};
+    z-index: 10;
+    top: #{$top};
+    right: #{103px - $width};
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: -36px;
+        right: #{$width - 6px};
+        transform: scaleX(-1);
+        filter: FlipH;
+        border-top: 36px solid $grey;
+        border-left: 0px solid transparent;
+        border-right: 3px solid transparent;
+        height: 0;
+        width: #{$width - 4px};
+    }
+}
+
+.html5 {
+    border-top: 300px solid $red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 200px;
+
+    position: relative;
+
+    &:after {
+        content: '';
+
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 25px solid $red;
+
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+    }
+
+    &:before {
+        content: '';
+
+        border-top: 265px solid $orange;
+        border-left: 0 solid transparent;
+        border-right: 25px solid transparent;
+
+        width: 84px;
+        position: absolute;
+        top: -282px;
+        left: 100px;
+    }
+
+    .part1 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid $orange;
+        border-right: 84px solid transparent;
+        z-index: 10;
+        left: 100px;
+        top: -17px;
+    }
+
+    .fivetop {
+        @include section;
+
+        &:before {
+            position: absolute;
+            content: '';
+            background: $grey;
+            width: 36px;
+            height: 74px;
+            left: -80px;
+            transform: skewX(5deg);
+        }
+    }
+
+    .fivemid {
+        @include section(-180px, 83px);
+
+        &:before {
+            position: absolute;
+            content: '';
+            background: #FFF;
+            width: 36px;
+            height: 60px;
+            left: 44px;
+            transform: skewX(-5deg);
+        }
+    }
+
+    .fivebot {
+        position: absolute;
+        bottom: 50px;
+
+        &:before {
+            width: 74px;
+            height: 0;
+            position: absolute;
+            content: '';
+            bottom: 1px;
+            border-top: 36px solid $grey;
+            border-left: 3px solid transparent;
+            border-right: 0px solid transparent;
+            left: 24px;
+            transform: skewX(10deg) rotate(10deg);
+        }
+
+        &:after {
+            width: 68px;
+            height: 0;
+            position: absolute;
+            content: '';
+            bottom: 0px;
+            border-top: 36px solid #fff;
+            border-left: 0px solid transparent;
+            border-right: 3px solid transparent;
+            left: 101px;
+            transform: skewX(-10deg) rotate(-10deg);
+        }
+    }
+
+    .fivetail {
+        position: relative;
+        left: 22px;
+        bottom: 129px;
+        width: 36px;
+        height: 50px;
+        background: $grey;
+        transform: skewY(5deg) rotate(-5deg);
+    }
+}
