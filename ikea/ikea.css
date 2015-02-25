@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Passion+One:900);
+figure.ikea {
+  width: 450px;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background: #2E83C3;
+  position: relative; }
+  figure.ikea:before {
+    position: absolute;
+    top: 2.5%;
+    left: 0.5%;
+    width: 99%;
+    height: 95%;
+    background: #FCFB25;
+    border-radius: 50%;
+    content: ''; }
+  figure.ikea:after {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    color: #2E83C3;
+    width: 100%;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 8em;
+    content: 'IKEA';
+    letter-spacing: 15px; }

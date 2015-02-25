@@ -1,5 +1,5 @@
 # logos
-Pure HTML &amp; CSS Logos
+Pure HTML &amp; CSS Logos - [View Outputs](http://yakoup46.github.io/logos/)
 
 ---
 
